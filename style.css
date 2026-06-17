@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050505;
+    color: white;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 28px;
+    color: #00eaff;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00eaff;
+}
+
+
+/* Home */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+    radial-gradient(circle at top, #123b55, #050505 60%);
+}
+
+.hero-content {
+    animation: fadeUp 1.5s ease;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero span {
+    color: #00eaff;
+}
+
+.hero p {
+    margin: 20px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+button {
+    padding: 15px 35px;
+    border: none;
+    border-radius: 30px;
+    background: #00eaff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+
+/* About */
+.about {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #bbb;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.card {
+    background: #111;
+    width: 280px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #222;
+    transition: 0.4s;
+}
+
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 0 30px #00eaff55;
+}
+
+
+.card h3 {
+    color: #00eaff;
+    margin-bottom: 15px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: #888;
+}
+
+
+/* Animation */
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+  }
